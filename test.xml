@@ -1,0 +1,36 @@
+<irc>
+  <user name='Hannah' messages='3' words='80' words_per_message='26.67'>
+    <namedrop name='flaneur' count='1'/>
+  </user>
+  <user name='Fiona' messages='1' words='5' words_per_message='5.00'>
+    <namedrop name='jonty' count='1'/>
+  </user>
+  <user name='abc' messages='1' words='28' words_per_message='28.00'>
+    <namedrop name='invisibleA' count='1'/>
+  </user>
+  <user name='skr' messages='7' words='118' words_per_message='16.86'>
+    <namedrop name='pete_bug' count='3'/>
+  </user>
+  <user name='pete_bug' messages='10' words='196' words_per_message='19.60'>
+    <namedrop name='invisibleA' count='1'/>
+    <namedrop name='skr' count='3'/>
+  </user>
+  <user name='jonty' messages='29' words='438' words_per_message='15.10'>
+    <namedrop name='flaneur' count='1'/>
+    <namedrop name='julian' count='8'/>
+  </user>
+  <user name='flaneur' messages='9' words='129' words_per_message='14.33'>
+    <namedrop name='invisibleA' count='1'/>
+    <namedrop name='jonty' count='2'/>
+    <namedrop name='julian' count='1'/>
+    <namedrop name='Hannah' count='1'/>
+  </user>
+  <user name='invisibleA' messages='5' words='107' words_per_message='21.40'>
+    <namedrop name='pete_bug' count='1'/>
+    <namedrop name='julian' count='1'/>
+    <namedrop name='Hannah' count='1'/>
+  </user>
+  <user name='julian' messages='16' words='480' words_per_message='30.00'>
+    <namedrop name='jonty' count='2'/>
+  </user>
+</irc>

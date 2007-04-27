@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>IRC Arcs: Communication Behavior</title>
+	<meta name="generator" content="MicroLink 5.6">
+
+<style>
+  body,p {
+  	color: #666666;
+  	font-family:Verdana,Geneva,Arial,Helvetica,sans-serif;
+  	font-size:8pt;
+  }
+	p,ul {
+		width: 400px;
+	}
+
+	h2 {
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+
+	hr {
+		width: 100%; 
+		color: #cccccc; 
+		background-color: #cccccc; 
+		height: 1px;
+		margin-top: 5em;
+		margin-bottom: 2em;
+		margin-right: auto; 
+		text-align: center; 
+		border: none;
+	}
+
+</style>
+</head>
+<body>
+
+<h1>IRC Arcs</h1>
+
+<p>A simple visualization of IRC communication behavior: Who is talking to whom? Or, more appropriately: Who is namedropping whom?</p>
+
+<ul>
+	<li>Circles represent <strong>users</strong></li>
+	<li>Arcs represent <strong>references</strong></li>
+</ul>
+
+<p>&hellip; where a reference is a message from a user containing the name of another user.</p>
+
+<p>Arcs are directional and drawn clockwise: In the upper half of a graph they point 
+from left to right, in the bottom half from right to left. Arc strength corresponds 
+to the number of references from the source to the target.</li>
+</ul>
+
+<p>This visualization favors strong social connections over sociability: Frequent 
+references between the same two users feature more prominently than combined 
+references from several sources to a single target.</p>
+
+<h2>1. "Post Idol"</h2>
+
+<p>Emphasis on active users.</p>
+
+<ul>
+	<li>Circle size = Number of messages</li>
+	<li>Circle color = Average message length</li>
+</ul>
+
+<table border="0" cellspacing="5" cellpadding="5" width="800">
+<tr>
+	<td valign="top" align="center">
+		<a href="irc_arcs_incoming.png"><img border="0" src="sm_irc_arcs_incoming.png" width="150" height="150" alt="Irc Circles Incoming" /></a><br />
+		Sorted by amount of incoming references</td>
+	<td	valign="top" align="center">
+		<a href="irc_arcs_outgoing.png"><img border="0" src="sm_irc_arcs_outgoing.png" width="150" height="150" alt="Irc Circles Outgoing" /></a><br />
+		Sorted by amount of outgoing references</td>
+	<td	valign="top" align="center">
+		<a href="irc_arcs_rate.png"><img border="0" src="sm_irc_arcs_rate.png" width="150" height="150" alt="Irc Circles Ratio" /></a><br />
+		Sorted by rate of incoming/outgoing references</td>
+	<td	valign="top" align="center">
+		<a href="irc_arcs_name.png"><img border="0" src="sm_irc_arcs_name.png" width="150" height="150" alt="Irc Circles Name" /></a><br />
+		Sorted by user name</td>
+	<td	valign="top" align="center">
+		<a href="irc_arcs_unsorted.png"><img border="0" src="sm_irc_arcs_unsorted.png" width="150" height="150" alt="Irc Circles Unsorted" /></a><br />
+		Unsorted</td>
+</tr>
+</table>
+
+<h2>2. "Egalitarian lineup"</h2>
+
+<p>Inverted semantics of circle color and circle size.</p>
+
+<ul>
+	<li>Circle size = Average message length</li>
+	<li>Circle color = Number of messages</li>
+</ul>
+
+<table border="0" cellspacing="5" cellpadding="5" width="800">
+<tr>
+	<td valign="top" align="center">
+		<a href="irc_arcs_incoming2.png"><img border="0" src="sm_irc_arcs_incoming2.png" width="150" height="150" alt="Irc Circles Incoming" /></a><br />
+		Sorted by amount of incoming references</td>
+	<td	valign="top" align="center">
+		<a href="irc_arcs_outgoing2.png"><img border="0" src="sm_irc_arcs_outgoing2.png" width="150" height="150" alt="Irc Circles Outgoing" /></a><br />
+		Sorted by amount of outgoing references</td>
+	<td	valign="top" align="center">
+		<a href="irc_arcs_rate2.png"><img border="0" src="sm_irc_arcs_rate2.png" width="150" height="150" alt="Irc Circles Ratio" /></a><br />
+		Sorted by rate of incoming/outgoing references</td>
+	<td	valign="top" align="center">
+		<a href="irc_arcs_name2.png"><img border="0" src="sm_irc_arcs_name2.png" width="150" height="150" alt="Irc Circles Name" /></a><br />
+		Sorted by user name</td>
+	<td	valign="top" align="center">
+		<a href="irc_arcs_unsorted2.png"><img border="0" src="sm_irc_arcs_unsorted2.png" width="150" height="150" alt="Irc Circles Unsorted" /></a><br />
+		Unsorted</td>
+</tr>
+</table>
+
+<hr />
+
+<p><a href="http://dekstop.de/weblog/">Martin Dittus</a> 2006-09-30.</p>
+<p>The graphs were created with <a href="http://processing.org/">Processing</a>.</p>
+<p>The visualization concept is based on <a href="http://www.bewitched.com/research.html">research</a> by <a href="http://www.bewitched.com/about.html">Martin Wattenberg</a>.</p>
+
+</body>
+</html>

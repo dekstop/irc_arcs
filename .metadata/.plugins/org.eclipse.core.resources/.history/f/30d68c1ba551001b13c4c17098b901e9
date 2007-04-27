@@ -1,0 +1,445 @@
+/**
+ * 
+ */
+package fm.last.visualizations.irc;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import processing.core.PApplet;
+import processing.core.PFont;
+import processing.core.PGraphics;
+
+/**
+ * @author martind
+ * 
+ * TODO: refactor backbuffer drawing routines into a dedicated class
+ * TODO: check OS font list before simply using Monaco...
+ */
+public class IrcArcs extends PApplet {
+
+  private static final long serialVersionUID = -5504168075503747845L;
+  
+  static final int WINDOW_WIDTH = 800;
+  static final int WINDOW_HEIGHT = 800;
+  
+  static final float MIN_CROSSHAIR_DIAMETER = 22;
+  static final float CROSSHAIR_STROKE_WEIGHT = 15;
+  
+  static final float USERINFO_XPOS = 10;
+  static final float USERINFO_YPOS = 10;
+  
+  static final String[] sortModeNames = {
+    "name", "incoming", "outgoing", "rate"
+  };
+  static final String[] emphasisModeNames = {
+    "emp_msg", "emp_wpm"
+  };
+
+  // irc data
+  IrcStats stats = null;
+  
+  // drawing backbuffer
+  PGraphics pg = null;
+  
+  // typo
+  PFont headerFont = null;
+  PFont font = null;
+  
+  // some shared state variables for the current visualization 
+  Map<String, Float> positions = new HashMap<String, Float>();
+  Map<String, Float> diameters = new HashMap<String, Float>();
+  
+  float pixPerMsg = 0;
+  float pixPerWpm = 0;
+
+  int sortMode = -1;
+  boolean emphasizeActiveUsers = true;
+  boolean showInfoOverlay = false;
+  
+  // redrawing the entire scene is a very expensive operation...
+  // so we only do it when necessary.
+  boolean relayoutOnNextDraw = true;
+  
+  // these cache current info overlay properties if the overlay is active --
+  // this is later used to restore old pixels 
+  float crosshairPosition = -1;
+  float crosshairDiameter = -1;
+  float userinfoWidth = -1;
+  float userinfoHeight = -1;
+  
+
+  /**
+   * 
+   */
+  public void setup() { 
+
+    System.out.println("Press <shift> key for info popups.");
+    System.out.println("Press 'a' key to toggle activity emphasis.");
+    System.out.println("Press 's' to save a screenshot.");
+    System.out.println("Click mouse to change sort order.");
+
+    // load data
+    //stats = IrcStats.loadFromXMLFile("../irc3.xml");
+    //stats = IrcStats.loadFromXMLFile("../irc3_nobot.xml");
+    stats = IrcStats.loadFromXMLFile(args[0]);
+    System.out.println("Number of users: " + stats.users.size());
+
+    // prepare
+    pixPerMsg = (float)WINDOW_WIDTH / stats.totalMessages;
+    pixPerWpm = (float)WINDOW_WIDTH / stats.totalWpm;
+    
+    // open graphics port
+    size(WINDOW_WIDTH, WINDOW_HEIGHT);
+    smooth();
+    
+    headerFont = createFont("Monaco", 12);
+    font = createFont("Monaco", 10);
+    
+    pg = createGraphics(WINDOW_WIDTH, WINDOW_HEIGHT, JAVA2D);
+    pg.smooth();
+    
+    noLoop();
+  }
+    
+  /**
+   * Main drawing routine.
+   */
+  public void draw() {
+    
+    if (pg == null) {
+      return;
+    }
+
+    if (relayoutOnNextDraw == true) {
+
+      relayoutOnNextDraw = false;
+
+      // determine user positions
+      generateLayout(pg);
+
+      // draw to backbuffer
+      pg.beginDraw();
+      
+      pg.background(255);
+      drawCircles(pg);
+      drawArcs(pg);
+      
+      pg.endDraw();
+      
+      pg.updatePixels();
+
+      // display full backbuffer
+      background(pg);
+    }
+    else {
+      // restore partial backbuffer
+      clearCrosshair();
+      clearUserinfo();
+    }
+
+    if (showInfoOverlay == true) {
+      
+      IrcStats.User user = getUserAt(mouseX);
+      if (user != null) {
+        drawCrosshairFor(user);
+        drawUserinfoFor(user);
+      }      
+    }
+  }
+
+  /**
+   * Click to change sort oder.
+   */
+  public void mouseReleased() {
+
+    sortMode++;
+    if (sortMode > 3) {
+      sortMode = 0;
+    }
+    
+    switch (sortMode) {
+    case 0: stats.sortByName(); break;
+    case 1: stats.sortByIncoming(); break;
+    case 2: stats.sortByOutgoing(); break;
+    case 3: stats.sortByRatio(); break;
+    }
+
+    relayoutOnNextDraw = true; 
+    redraw();
+  } 
+  
+  /**
+   * Press shift + move mouse to see user info.
+   */
+  public void mouseMoved() {
+    
+    if (showInfoOverlay == true) {
+      redraw();
+    }
+  }
+  
+  /**
+   * Press shift + move mouse to see user info.
+   */
+  public void keyPressed() {
+    
+    if (keyCode == SHIFT) {
+      showInfoOverlay = true;
+      redraw();
+    }
+  }
+  
+  /**
+   * Release shift to hide user info.
+   * Press 'a' to toggle activity emphasis.
+   * Press 's' to save a screenshot.
+   */
+  public void keyReleased() {
+    if (showInfoOverlay == true) {
+      showInfoOverlay = false;
+      redraw();
+    }
+    if (key == 'a') {
+      // toggle visualization emphasis
+      emphasizeActiveUsers = !emphasizeActiveUsers;
+      System.out.println("emphasizeActiveUsers = " + emphasizeActiveUsers);
+      relayoutOnNextDraw = true; 
+      redraw();
+    }
+    else if (key == 's') {
+      // store screenshot
+      String filename;
+      if (0 <= sortMode && sortMode < sortModeNames.length) {
+        filename = "irc_arcs_" + sortModeNames[sortMode] + "_";
+      }
+      else {
+        filename = "irc_arcs_" + sortMode + "_";
+      }
+      filename += (emphasizeActiveUsers ? emphasisModeNames[0] : emphasisModeNames[1]) + ".tga";
+      pg.save(filename);
+      System.out.println("Saved " + filename);
+    }
+  }
+  
+  /**
+   * Helper for user info panel.
+   */
+  IrcStats.User getUserAt(int xpos) {
+    
+    IrcStats.User focusedUser = null;
+    float pos = -10000;
+    
+    // find the closest center
+    // TODO: do proper surface matching based on circle diameters? (might be inconvenient for tiny users)
+    for (IrcStats.User user : stats.users) {
+      float userpos = positions.get(user.name);
+      if (Math.abs(userpos - xpos) < Math.abs(pos - xpos)) {
+        focusedUser = user;
+        pos = userpos;
+      }
+    }
+    return focusedUser;
+  }
+  
+  /**
+   * Calculates user positions + diameters for the current state.
+   */
+  void generateLayout(PGraphics buf) {
+
+    float xpos = 0;
+    for (IrcStats.User user : stats.users) {
+      float diameter;
+      if (emphasizeActiveUsers) {
+        diameter = user.messages * pixPerMsg;
+      }
+      else {
+        diameter = user.words_per_message * pixPerWpm; 
+      }
+      diameters.put(user.name, diameter);
+      positions.put(user.name, xpos + (diameter / 2f));
+      xpos += diameter;      
+    }
+  }
+  
+  /**
+   * Draws users.
+   */
+  void drawCircles(PGraphics buf) {
+        
+    buf.noStroke();
+
+    for (IrcStats.User user : stats.users) {
+      
+      float diameter = diameters.get(user.name);
+      
+      float strength;
+      if (emphasizeActiveUsers) {
+        strength = user.words_per_message * 0.9f / stats.maxWpm + 0.1f;
+      }
+      else {
+        strength = 0.6f * user.messages / stats.maxMessages + 0.4f;
+      } 
+
+      buf.fill(
+          100, 
+          30, 
+          100 * strength, 
+          255 * strength
+      );
+      buf.ellipse(
+          positions.get(user.name),
+          height / 2f,
+          diameter,
+          diameter);
+    }
+  }
+
+  /**
+   * Draws conversation arcs.
+   */
+  void drawArcs(PGraphics buf) {
+    
+    buf.noFill();
+    
+    for (IrcStats.User user : stats.users) {
+      String sender = user.name;
+      for (String recipient: user.namedrops.keySet()) {
+        int namedropsPerLink = user.namedrops.get(recipient);
+        float strength =  0.9f * namedropsPerLink / stats.maxNamedropsPerLink + 0.1f;
+        
+        float fromPos = positions.get(sender);
+        float toPos = positions.get(recipient);
+        float center = (fromPos + toPos) / 2f;
+        float diameter = Math.abs(toPos - fromPos);
+        
+        buf.stroke(
+            100, 
+            30, 
+            0, 
+            255 * strength);
+        
+        buf.strokeWeight(namedropsPerLink * pixPerMsg + 1);
+        
+        int userIdx = stats.users.indexOf(user);
+        int recipientIdx = stats.users.indexOf(stats.getUserByName(recipient));
+        if (userIdx > recipientIdx) {
+          buf.arc(center, buf.height / 2f, diameter, diameter, 0, PI);          
+        }
+        else {
+          buf.arc(center, buf.height / 2f, diameter, diameter, PI, 0);
+        }
+      }
+    }
+  }
+  
+  /**
+   * Highlights a specific user.
+   */
+  void drawCrosshairFor(IrcStats.User user) {
+    noFill();
+    stroke(255, 0, 0, 120);
+    strokeWeight(CROSSHAIR_STROKE_WEIGHT);
+    crosshairDiameter = diameters.get(user.name) + MIN_CROSSHAIR_DIAMETER;
+    crosshairPosition = positions.get(user.name);
+    ellipse(
+        crosshairPosition,
+        height / 2f,
+        crosshairDiameter,
+        crosshairDiameter);
+  }
+  
+  /**
+   * Copies a part of the backbuffer over the current crosshair screen area.
+   */
+  void clearCrosshair() {
+    
+    if (crosshairPosition < 0 || crosshairDiameter < 0) {
+      // no crosshair drawn yet
+      return;
+    }
+
+    int xpos = (int)(
+        crosshairPosition - 
+        crosshairDiameter/2 - 
+        CROSSHAIR_STROKE_WEIGHT/2);
+    xpos = Math.max(xpos, 0);
+
+    int ypos = (int)(
+        pg.height/2 - 
+        crosshairDiameter/2 -
+        CROSSHAIR_STROKE_WEIGHT/2);
+    image(
+        pg.get(
+            xpos, 
+            ypos, 
+            (int)(crosshairDiameter + CROSSHAIR_STROKE_WEIGHT + 2), 
+            (int)(crosshairDiameter + CROSSHAIR_STROKE_WEIGHT + 2)), 
+            xpos, ypos);
+  }
+  
+  /**
+   * Displays information about a specific user.
+   */
+  void drawUserinfoFor(IrcStats.User user) {
+    
+    float baseline = headerFont.ascent;
+
+    textFont(headerFont);
+    fill(0x033);
+    
+    text(
+        user.name, 
+        USERINFO_XPOS, 
+        USERINFO_YPOS + baseline);
+    
+    userinfoWidth = textWidth(user.name);
+    
+    textFont(font);
+    fill(0x066);
+    
+    String nfo = 
+      "messages: " + user.messages + "\n" +
+      "incoming: " + stats.incoming.get(user.name) + "\n" +
+      "outgoing: " + stats.outgoing.get(user.name) + "\n" +
+      "words/message: " + user.words_per_message;
+    
+    baseline += (headerFont.ascent + headerFont.descent) * 2;
+    
+    text(
+        nfo,
+        USERINFO_XPOS, 
+        USERINFO_YPOS + baseline);
+
+    userinfoWidth = Math.max(userinfoWidth, textWidth(nfo));
+    userinfoHeight = baseline + (font.ascent + font.descent) * 4;
+  }
+  
+  /**
+   * Copies a part of the backbuffer over the current user info screen area.
+   */
+  void clearUserinfo() {
+    
+    if (userinfoWidth < 0 || userinfoHeight < 0) {
+      // no userinfo drawn yet
+      return;
+    }
+
+    image(
+      pg.get(
+        (int)USERINFO_XPOS, 
+        (int)USERINFO_YPOS, 
+        (int)userinfoWidth, 
+        (int)userinfoHeight), 
+      USERINFO_XPOS, 
+      USERINFO_YPOS);
+  }
+  
+  public static void main(String[] args) {
+    if (args.length == 0) {
+      System.out.println("missing parameter: <IRC stats xml file>");
+      return;
+    }
+    PApplet.main(new String[] { IrcArcs.class.getCanonicalName(), args[0] });
+  }
+}

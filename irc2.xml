@@ -1,0 +1,985 @@
+<irc>
+  <user name='muesli' messages='187' words='2216' words_per_message='11.85'>
+    <namedrop name='RJ' count='3'/>
+    <namedrop name='home' count='3'/>
+    <namedrop name='Russ' count='6'/>
+    <namedrop name='sharevari' count='8'/>
+    <namedrop name='skr' count='10'/>
+    <namedrop name='mokele' count='1'/>
+    <namedrop name='Felix_' count='1'/>
+    <namedrop name='abc' count='2'/>
+    <namedrop name='flaneur' count='3'/>
+    <namedrop name='Muz' count='9'/>
+    <namedrop name='felix' count='10'/>
+    <namedrop name='felix__' count='1'/>
+    <namedrop name='julian' count='2'/>
+    <namedrop name='russ' count='2'/>
+    <namedrop name='mischa' count='4'/>
+  </user>
+  <user name='Muz' messages='2660' words='35505' words_per_message='13.35'>
+    <namedrop name='helen' count='1'/>
+    <namedrop name='home' count='12'/>
+    <namedrop name='Fiona' count='77'/>
+    <namedrop name='RJ' count='18'/>
+    <namedrop name='laura' count='3'/>
+    <namedrop name='train' count='2'/>
+    <namedrop name='Russ' count='41'/>
+    <namedrop name='sharevari' count='132'/>
+    <namedrop name='bus' count='1'/>
+    <namedrop name='rh' count='8'/>
+    <namedrop name='muesli_home' count='4'/>
+    <namedrop name='skr' count='56'/>
+    <namedrop name='invisibleA' count='24'/>
+    <namedrop name='julian_' count='2'/>
+    <namedrop name='Felix_' count='1'/>
+    <namedrop name='mustaqila' count='2'/>
+    <namedrop name='x_nova' count='36'/>
+    <namedrop name='mueslix' count='7'/>
+    <namedrop name='stefanb' count='28'/>
+    <namedrop name='mokele' count='18'/>
+    <namedrop name='trainatron' count='2'/>
+    <namedrop name='flaneur' count='62'/>
+    <namedrop name='abc' count='32'/>
+    <namedrop name='Felix' count='3'/>
+    <namedrop name='Muz' count='9'/>
+    <namedrop name='rj_' count='1'/>
+    <namedrop name='thor' count='5'/>
+    <namedrop name='irccat' count='4'/>
+    <namedrop name='felix' count='6'/>
+    <namedrop name='pete_bug' count='8'/>
+    <namedrop name='jonty' count='29'/>
+    <namedrop name='martind' count='8'/>
+    <namedrop name='mish' count='1'/>
+    <namedrop name='julian' count='56'/>
+    <namedrop name='vincro' count='9'/>
+    <namedrop name='russ' count='3'/>
+    <namedrop name='mischa' count='16'/>
+    <namedrop name='nova' count='1'/>
+    <namedrop name='mustaqila_' count='1'/>
+    <namedrop name='mischa_away' count='1'/>
+  </user>
+  <user name='Muz|bus' messages='27' words='314' words_per_message='11.63'>
+    <namedrop name='train' count='1'/>
+    <namedrop name='bus' count='3'/>
+    <namedrop name='jonty' count='1'/>
+  </user>
+  <user name='Russ[work]' messages='1163' words='15196' words_per_message='13.07'>
+    <namedrop name='RJ' count='9'/>
+    <namedrop name='Fiona' count='5'/>
+    <namedrop name='home' count='8'/>
+    <namedrop name='Russ' count='2'/>
+    <namedrop name='train' count='1'/>
+    <namedrop name='sharevari' count='8'/>
+    <namedrop name='invisibleA' count='5'/>
+    <namedrop name='skr' count='11'/>
+    <namedrop name='x_nova' count='6'/>
+    <namedrop name='muesli_' count='2'/>
+    <namedrop name='_rj' count='5'/>
+    <namedrop name='Felix_' count='3'/>
+    <namedrop name='mueslix' count='5'/>
+    <namedrop name='mokele' count='5'/>
+    <namedrop name='flaneur' count='18'/>
+    <namedrop name='abc' count='14'/>
+    <namedrop name='Muz' count='7'/>
+    <namedrop name='mischa_brb' count='1'/>
+    <namedrop name='felix' count='7'/>
+    <namedrop name='pete_bug' count='6'/>
+    <namedrop name='jonty' count='7'/>
+    <namedrop name='mish' count='2'/>
+    <namedrop name='julian' count='6'/>
+    <namedrop name='vincro' count='1'/>
+    <namedrop name='russ' count='8'/>
+    <namedrop name='mischa' count='3'/>
+  </user>
+  <user name='muz_' messages='14' words='153' words_per_message='10.93'>
+    <namedrop name='Fiona' count='1'/>
+    <namedrop name='RJ' count='1'/>
+    <namedrop name='flaneur' count='1'/>
+  </user>
+  <user name='irccat' messages='2741' words='79036' words_per_message='28.83'>
+    <namedrop name='home' count='5'/>
+    <namedrop name='RJ' count='3'/>
+    <namedrop name='train' count='3'/>
+    <namedrop name='sharevari' count='92'/>
+    <namedrop name='Russ' count='2'/>
+    <namedrop name='invisibleA' count='1'/>
+    <namedrop name='skr' count='1'/>
+    <namedrop name='mokele' count='141'/>
+    <namedrop name='flaneur' count='1'/>
+    <namedrop name='Muz' count='1'/>
+    <namedrop name='irccat' count='5'/>
+    <namedrop name='martind' count='276'/>
+    <namedrop name='jonty' count='161'/>
+    <namedrop name='julian' count='95'/>
+    <namedrop name='russ' count='196'/>
+    <namedrop name='vincro' count='23'/>
+    <namedrop name='mischa' count='358'/>
+  </user>
+  <user name='pete_bug_' messages='7' words='53' words_per_message='7.57'>
+    <namedrop name='jonty' count='1'/>
+  </user>
+  <user name='jonty' messages='1638' words='21054' words_per_message='12.85'>
+    <namedrop name='helen' count='2'/>
+    <namedrop name='home' count='14'/>
+    <namedrop name='RJ' count='32'/>
+    <namedrop name='Fiona' count='97'/>
+    <namedrop name='laura' count='10'/>
+    <namedrop name='train' count='1'/>
+    <namedrop name='sharevari' count='56'/>
+    <namedrop name='Russ' count='60'/>
+    <namedrop name='rh' count='10'/>
+    <namedrop name='bus' count='1'/>
+    <namedrop name='skr' count='34'/>
+    <namedrop name='invisibleA' count='46'/>
+    <namedrop name='mueslix' count='2'/>
+    <namedrop name='x_nova' count='2'/>
+    <namedrop name='mustaqila' count='1'/>
+    <namedrop name='_rj' count='8'/>
+    <namedrop name='stefanb' count='16'/>
+    <namedrop name='mokele' count='17'/>
+    <namedrop name='Felix' count='1'/>
+    <namedrop name='flaneur' count='74'/>
+    <namedrop name='abc' count='69'/>
+    <namedrop name='Muz' count='38'/>
+    <namedrop name='rj_' count='1'/>
+    <namedrop name='irccat' count='2'/>
+    <namedrop name='felix' count='4'/>
+    <namedrop name='martind' count='10'/>
+    <namedrop name='pete_bug' count='37'/>
+    <namedrop name='jonty' count='6'/>
+    <namedrop name='julian' count='40'/>
+    <namedrop name='vincro' count='4'/>
+    <namedrop name='mischa' count='6'/>
+    <namedrop name='russ' count='5'/>
+    <namedrop name='nova' count='4'/>
+  </user>
+  <user name='mischa_brb' messages='1' words='32' words_per_message='32.00'/>
+  <user name='Fiona_' messages='2' words='30' words_per_message='15.00'>
+    <namedrop name='skr' count='2'/>
+  </user>
+  <user name='abc[home]' messages='163' words='2546' words_per_message='15.62'>
+    <namedrop name='RJ' count='3'/>
+    <namedrop name='Russ' count='9'/>
+    <namedrop name='invisibleA' count='1'/>
+    <namedrop name='x_nova' count='1'/>
+    <namedrop name='mokele' count='3'/>
+    <namedrop name='flaneur' count='2'/>
+    <namedrop name='Muz' count='4'/>
+    <namedrop name='martind' count='2'/>
+    <namedrop name='pete_bug' count='1'/>
+    <namedrop name='jonty' count='4'/>
+    <namedrop name='julian' count='4'/>
+  </user>
+  <user name='thor' messages='8' words='185' words_per_message='23.12'>
+    <namedrop name='skr' count='1'/>
+    <namedrop name='x_nova' count='2'/>
+    <namedrop name='flaneur' count='2'/>
+    <namedrop name='vincro' count='1'/>
+  </user>
+  <user name='muesli_' messages='48' words='449' words_per_message='9.35'>
+    <namedrop name='skr' count='1'/>
+    <namedrop name='jonty' count='1'/>
+    <namedrop name='russ' count='1'/>
+    <namedrop name='mischa' count='1'/>
+  </user>
+  <user name='abc[laptop]' messages='76' words='1251' words_per_message='16.46'>
+    <namedrop name='Fiona' count='1'/>
+    <namedrop name='Russ' count='2'/>
+    <namedrop name='sharevari' count='1'/>
+    <namedrop name='skr' count='1'/>
+    <namedrop name='mustaqila' count='1'/>
+    <namedrop name='flaneur' count='3'/>
+    <namedrop name='Muz' count='3'/>
+    <namedrop name='julian' count='2'/>
+    <namedrop name='mischa' count='4'/>
+  </user>
+  <user name='helen' messages='2' words='3' words_per_message='1.50'/>
+  <user name='jonty|train' messages='64' words='679' words_per_message='10.61'>
+    <namedrop name='Fiona' count='1'/>
+    <namedrop name='train' count='5'/>
+    <namedrop name='bus' count='3'/>
+    <namedrop name='mueslix' count='1'/>
+    <namedrop name='trainatron' count='5'/>
+    <namedrop name='thor' count='1'/>
+    <namedrop name='martind' count='1'/>
+    <namedrop name='jonty' count='5'/>
+  </user>
+  <user name='mischa_home' messages='24' words='313' words_per_message='13.04'>
+    <namedrop name='skr' count='1'/>
+    <namedrop name='x_nova' count='2'/>
+    <namedrop name='abc' count='3'/>
+    <namedrop name='flaneur' count='1'/>
+  </user>
+  <user name='martind' messages='448' words='6543' words_per_message='14.60'>
+    <namedrop name='home' count='2'/>
+    <namedrop name='RJ' count='3'/>
+    <namedrop name='Russ' count='2'/>
+    <namedrop name='sharevari' count='5'/>
+    <namedrop name='rh' count='1'/>
+    <namedrop name='invisibleA' count='7'/>
+    <namedrop name='skr' count='40'/>
+    <namedrop name='mokele' count='3'/>
+    <namedrop name='stefanb' count='4'/>
+    <namedrop name='_rj' count='2'/>
+    <namedrop name='RJ-Laptop' count='2'/>
+    <namedrop name='abc' count='15'/>
+    <namedrop name='flaneur' count='5'/>
+    <namedrop name='Muz' count='2'/>
+    <namedrop name='felix' count='6'/>
+    <namedrop name='jonty' count='5'/>
+    <namedrop name='pete_bug' count='3'/>
+    <namedrop name='felix__' count='1'/>
+    <namedrop name='julian' count='4'/>
+    <namedrop name='vincro' count='3'/>
+    <namedrop name='russ' count='4'/>
+    <namedrop name='mustaqila_' count='1'/>
+  </user>
+  <user name='flaneur' messages='1518' words='23997' words_per_message='15.81'>
+    <namedrop name='muz_' count='1'/>
+    <namedrop name='home' count='13'/>
+    <namedrop name='Fiona' count='17'/>
+    <namedrop name='RJ' count='19'/>
+    <namedrop name='laura' count='1'/>
+    <namedrop name='sharevari' count='46'/>
+    <namedrop name='Russ' count='64'/>
+    <namedrop name='rh' count='2'/>
+    <namedrop name='muesli_home' count='2'/>
+    <namedrop name='skr' count='32'/>
+    <namedrop name='invisibleA' count='9'/>
+    <namedrop name='x_nova' count='6'/>
+    <namedrop name='Felix_' count='6'/>
+    <namedrop name='mueslix' count='7'/>
+    <namedrop name='_rj' count='6'/>
+    <namedrop name='mustaqila' count='6'/>
+    <namedrop name='mokele' count='59'/>
+    <namedrop name='Felix' count='2'/>
+    <namedrop name='flaneur' count='3'/>
+    <namedrop name='abc' count='66'/>
+    <namedrop name='mischa_home' count='2'/>
+    <namedrop name='himi' count='2'/>
+    <namedrop name='thor' count='1'/>
+    <namedrop name='Muz' count='55'/>
+    <namedrop name='irccat' count='2'/>
+    <namedrop name='felix' count='7'/>
+    <namedrop name='pete_bug' count='6'/>
+    <namedrop name='martind' count='7'/>
+    <namedrop name='jonty' count='60'/>
+    <namedrop name='mish' count='2'/>
+    <namedrop name='julian' count='226'/>
+    <namedrop name='mischa' count='6'/>
+    <namedrop name='vincro' count='15'/>
+    <namedrop name='russ' count='9'/>
+    <namedrop name='nova' count='1'/>
+  </user>
+  <user name='martind-laptop' messages='14' words='158' words_per_message='11.29'>
+    <namedrop name='skr' count='6'/>
+    <namedrop name='julian' count='1'/>
+  </user>
+  <user name='Muz{Mac}' messages='17' words='272' words_per_message='16.00'>
+    <namedrop name='sharevari' count='3'/>
+    <namedrop name='muesli_home' count='2'/>
+    <namedrop name='flaneur' count='1'/>
+  </user>
+  <user name='mokele[away]' messages='126' words='1447' words_per_message='11.48'>
+    <namedrop name='Fiona' count='1'/>
+    <namedrop name='RJ' count='1'/>
+    <namedrop name='Russ' count='2'/>
+    <namedrop name='laura' count='1'/>
+    <namedrop name='mokele' count='1'/>
+    <namedrop name='flaneur' count='3'/>
+    <namedrop name='julian' count='1'/>
+  </user>
+  <user name='pete_bug' messages='341' words='4230' words_per_message='12.40'>
+    <namedrop name='home' count='4'/>
+    <namedrop name='RJ' count='4'/>
+    <namedrop name='Fiona' count='4'/>
+    <namedrop name='sharevari' count='3'/>
+    <namedrop name='laura' count='1'/>
+    <namedrop name='Russ' count='5'/>
+    <namedrop name='invisibleA' count='4'/>
+    <namedrop name='skr' count='18'/>
+    <namedrop name='mueslix' count='1'/>
+    <namedrop name='stefanb' count='3'/>
+    <namedrop name='x_nova' count='1'/>
+    <namedrop name='abc' count='7'/>
+    <namedrop name='thor' count='1'/>
+    <namedrop name='Muz' count='1'/>
+    <namedrop name='felix' count='2'/>
+    <namedrop name='martind' count='4'/>
+    <namedrop name='jonty' count='10'/>
+    <namedrop name='julian' count='1'/>
+    <namedrop name='russ' count='2'/>
+    <namedrop name='mischa' count='1'/>
+    <namedrop name='vincro' count='10'/>
+  </user>
+  <user name='mokelehome' messages='1' words='35' words_per_message='35.00'/>
+  <user name='nova' messages='5' words='76' words_per_message='15.20'>
+    <namedrop name='x_nova' count='1'/>
+    <namedrop name='flaneur' count='1'/>
+  </user>
+  <user name='THEINTERNET' messages='1' words='11' words_per_message='11.00'/>
+  <user name='flaneur_' messages='2' words='36' words_per_message='18.00'/>
+  <user name='flaneur[dinner]' messages='1' words='8' words_per_message='8.00'>
+    <namedrop name='Russ' count='1'/>
+  </user>
+  <user name='sharevari' messages='1740' words='24409' words_per_message='14.03'>
+    <namedrop name='helen' count='1'/>
+    <namedrop name='home' count='5'/>
+    <namedrop name='RJ' count='3'/>
+    <namedrop name='Fiona' count='3'/>
+    <namedrop name='RJ_away' count='1'/>
+    <namedrop name='Russ' count='28'/>
+    <namedrop name='train' count='1'/>
+    <namedrop name='rh' count='5'/>
+    <namedrop name='muesli_home' count='9'/>
+    <namedrop name='skr' count='26'/>
+    <namedrop name='bus' count='3'/>
+    <namedrop name='invisibleA' count='16'/>
+    <namedrop name='stefanb' count='9'/>
+    <namedrop name='_rj' count='2'/>
+    <namedrop name='x_nova' count='2'/>
+    <namedrop name='mustaqila' count='4'/>
+    <namedrop name='mueslix' count='7'/>
+    <namedrop name='mokele' count='12'/>
+    <namedrop name='flaneur' count='35'/>
+    <namedrop name='martind_' count='1'/>
+    <namedrop name='abc' count='44'/>
+    <namedrop name='mischa_home' count='1'/>
+    <namedrop name='mustarrrrqila' count='1'/>
+    <namedrop name='Muz' count='4'/>
+    <namedrop name='felix' count='10'/>
+    <namedrop name='martind' count='8'/>
+    <namedrop name='pete_bug' count='2'/>
+    <namedrop name='jonty' count='40'/>
+    <namedrop name='julian' count='26'/>
+    <namedrop name='russ' count='1'/>
+    <namedrop name='vincro' count='2'/>
+    <namedrop name='Mactaqila' count='2'/>
+    <namedrop name='mischa' count='15'/>
+    <namedrop name='RJdc' count='1'/>
+    <namedrop name='nova' count='1'/>
+  </user>
+  <user name='martind_' messages='7' words='127' words_per_message='18.14'>
+    <namedrop name='mokele' count='1'/>
+    <namedrop name='jonty' count='1'/>
+  </user>
+  <user name='jonty|trainatron' messages='37' words='354' words_per_message='9.57'>
+    <namedrop name='Fiona' count='2'/>
+    <namedrop name='Russ' count='1'/>
+    <namedrop name='train' count='2'/>
+    <namedrop name='invisibleA' count='1'/>
+    <namedrop name='mueslix' count='1'/>
+    <namedrop name='Muz' count='3'/>
+  </user>
+  <user name='Fiona' messages='1237' words='19141' words_per_message='15.47'>
+    <namedrop name='RJ' count='2'/>
+    <namedrop name='helen' count='6'/>
+    <namedrop name='home' count='14'/>
+    <namedrop name='laura' count='4'/>
+    <namedrop name='train' count='2'/>
+    <namedrop name='Russ' count='6'/>
+    <namedrop name='sharevari' count='21'/>
+    <namedrop name='rh' count='8'/>
+    <namedrop name='bus' count='1'/>
+    <namedrop name='invisibleA' count='70'/>
+    <namedrop name='skr' count='113'/>
+    <namedrop name='mueslix' count='1'/>
+    <namedrop name='mokele' count='11'/>
+    <namedrop name='stefanb' count='13'/>
+    <namedrop name='flaneur' count='11'/>
+    <namedrop name='abc' count='16'/>
+    <namedrop name='mustarrrrqila' count='1'/>
+    <namedrop name='thor' count='2'/>
+    <namedrop name='Muz' count='1'/>
+    <namedrop name='irccat' count='1'/>
+    <namedrop name='martind' count='1'/>
+    <namedrop name='pete_bug' count='5'/>
+    <namedrop name='jonty' count='65'/>
+    <namedrop name='julian' count='9'/>
+    <namedrop name='vincro' count='2'/>
+    <namedrop name='russ' count='9'/>
+  </user>
+  <user name='RJdc' messages='62' words='882' words_per_message='14.23'>
+    <namedrop name='skr' count='1'/>
+    <namedrop name='abc' count='2'/>
+    <namedrop name='mish' count='2'/>
+    <namedrop name='russ' count='1'/>
+  </user>
+  <user name='invisibleA' messages='958' words='13724' words_per_message='14.33'>
+    <namedrop name='RJ' count='2'/>
+    <namedrop name='home' count='4'/>
+    <namedrop name='Fiona' count='48'/>
+    <namedrop name='train' count='1'/>
+    <namedrop name='Russ' count='8'/>
+    <namedrop name='sharevari' count='10'/>
+    <namedrop name='rh' count='1'/>
+    <namedrop name='invisibleA' count='2'/>
+    <namedrop name='skr' count='27'/>
+    <namedrop name='mokele' count='1'/>
+    <namedrop name='mueslix' count='1'/>
+    <namedrop name='muesli_' count='1'/>
+    <namedrop name='stefanb' count='10'/>
+    <namedrop name='flaneur' count='13'/>
+    <namedrop name='abc' count='12'/>
+    <namedrop name='thor' count='2'/>
+    <namedrop name='Muz' count='15'/>
+    <namedrop name='irccat' count='2'/>
+    <namedrop name='felix' count='2'/>
+    <namedrop name='pete_bug' count='7'/>
+    <namedrop name='jonty' count='12'/>
+    <namedrop name='martind' count='8'/>
+    <namedrop name='julian' count='11'/>
+    <namedrop name='vincro' count='2'/>
+    <namedrop name='mischa' count='4'/>
+    <namedrop name='russ' count='1'/>
+  </user>
+  <user name='rj_' messages='7' words='91' words_per_message='13.00'>
+    <namedrop name='abc' count='2'/>
+    <namedrop name='Muz' count='1'/>
+    <namedrop name='mish' count='1'/>
+    <namedrop name='mischa' count='1'/>
+  </user>
+  <user name='felix__' messages='18' words='278' words_per_message='15.44'>
+    <namedrop name='skr' count='2'/>
+    <namedrop name='martind' count='1'/>
+    <namedrop name='russ' count='2'/>
+    <namedrop name='mischa' count='2'/>
+  </user>
+  <user name='vincro' messages='244' words='4182' words_per_message='17.14'>
+    <namedrop name='Fiona' count='2'/>
+    <namedrop name='laura' count='1'/>
+    <namedrop name='sharevari' count='1'/>
+    <namedrop name='Russ' count='2'/>
+    <namedrop name='invisibleA' count='1'/>
+    <namedrop name='skr' count='2'/>
+    <namedrop name='mustaqila' count='1'/>
+    <namedrop name='x_nova' count='1'/>
+    <namedrop name='stefanb' count='5'/>
+    <namedrop name='mokele' count='15'/>
+    <namedrop name='abc' count='1'/>
+    <namedrop name='flaneur' count='8'/>
+    <namedrop name='thor' count='1'/>
+    <namedrop name='Muz' count='1'/>
+    <namedrop name='felix' count='2'/>
+    <namedrop name='martind' count='3'/>
+    <namedrop name='pete_bug' count='15'/>
+    <namedrop name='jonty' count='3'/>
+    <namedrop name='julian' count='7'/>
+    <namedrop name='vincro' count='2'/>
+    <namedrop name='russ' count='1'/>
+  </user>
+  <user name='muesli_home' messages='86' words='836' words_per_message='9.72'>
+    <namedrop name='RJ' count='3'/>
+    <namedrop name='sharevari' count='8'/>
+    <namedrop name='Russ' count='2'/>
+    <namedrop name='_rj' count='1'/>
+    <namedrop name='Muz' count='2'/>
+    <namedrop name='felix' count='4'/>
+    <namedrop name='julian' count='4'/>
+    <namedrop name='Mactaqila' count='1'/>
+  </user>
+  <user name='mischa_away' messages='14' words='194' words_per_message='13.86'>
+    <namedrop name='flaneur' count='1'/>
+    <namedrop name='Muz' count='2'/>
+  </user>
+  <user name='Felix_' messages='183' words='2442' words_per_message='13.34'>
+    <namedrop name='home' count='2'/>
+    <namedrop name='sharevari' count='1'/>
+    <namedrop name='laura' count='3'/>
+    <namedrop name='skr' count='1'/>
+    <namedrop name='invisibleA' count='2'/>
+    <namedrop name='mokele' count='1'/>
+    <namedrop name='mueslix' count='2'/>
+    <namedrop name='abc' count='1'/>
+    <namedrop name='flaneur' count='3'/>
+    <namedrop name='jonty' count='1'/>
+    <namedrop name='julian' count='2'/>
+    <namedrop name='mischa' count='1'/>
+    <namedrop name='russ' count='20'/>
+  </user>
+  <user name='RJ-Laptop' messages='27' words='346' words_per_message='12.81'>
+    <namedrop name='home' count='1'/>
+    <namedrop name='abc' count='1'/>
+    <namedrop name='martind' count='2'/>
+    <namedrop name='pete_bug' count='1'/>
+  </user>
+  <user name='irccat-dev' messages='4' words='12' words_per_message='3.00'/>
+  <user name='rh' messages='131' words='2381' words_per_message='18.18'>
+    <namedrop name='home' count='4'/>
+    <namedrop name='sharevari' count='13'/>
+    <namedrop name='Russ' count='1'/>
+    <namedrop name='invisibleA' count='1'/>
+    <namedrop name='skr' count='1'/>
+    <namedrop name='mokele' count='3'/>
+    <namedrop name='abc' count='9'/>
+    <namedrop name='himi' count='1'/>
+    <namedrop name='martind' count='2'/>
+    <namedrop name='jonty' count='6'/>
+    <namedrop name='julian' count='2'/>
+    <namedrop name='mischa_away' count='1'/>
+  </user>
+  <user name='mustarrrqila' messages='11' words='138' words_per_message='12.55'>
+    <namedrop name='RJ' count='1'/>
+    <namedrop name='sharevari' count='1'/>
+    <namedrop name='mueslix' count='2'/>
+    <namedrop name='pete_bug' count='1'/>
+  </user>
+  <user name='himi' messages='4' words='72' words_per_message='18.00'>
+    <namedrop name='flaneur' count='1'/>
+  </user>
+  <user name='julian_' messages='2' words='61' words_per_message='30.50'>
+    <namedrop name='mokele' count='1'/>
+  </user>
+  <user name='felix' messages='403' words='4877' words_per_message='12.10'>
+    <namedrop name='RJ' count='1'/>
+    <namedrop name='sharevari' count='5'/>
+    <namedrop name='Russ' count='1'/>
+    <namedrop name='bus' count='2'/>
+    <namedrop name='muesli_home' count='4'/>
+    <namedrop name='invisibleA' count='3'/>
+    <namedrop name='skr' count='7'/>
+    <namedrop name='mueslix' count='8'/>
+    <namedrop name='flaneur' count='6'/>
+    <namedrop name='abc' count='6'/>
+    <namedrop name='Muz' count='1'/>
+    <namedrop name='felix' count='2'/>
+    <namedrop name='jonty' count='2'/>
+    <namedrop name='pete_bug' count='3'/>
+    <namedrop name='vincro' count='1'/>
+    <namedrop name='russ' count='19'/>
+    <namedrop name='mischa' count='11'/>
+  </user>
+  <user name='russ' messages='50' words='714' words_per_message='14.28'>
+    <namedrop name='skr' count='1'/>
+    <namedrop name='rj_' count='1'/>
+    <namedrop name='mish' count='1'/>
+  </user>
+  <user name='mueslix' messages='277' words='2866' words_per_message='10.35'>
+    <namedrop name='Fiona' count='2'/>
+    <namedrop name='RJ' count='13'/>
+    <namedrop name='home' count='4'/>
+    <namedrop name='sharevari' count='3'/>
+    <namedrop name='train' count='1'/>
+    <namedrop name='Russ' count='5'/>
+    <namedrop name='skr' count='7'/>
+    <namedrop name='Felix_' count='4'/>
+    <namedrop name='_rj' count='4'/>
+    <namedrop name='mueslix' count='1'/>
+    <namedrop name='mokele' count='1'/>
+    <namedrop name='Felix' count='4'/>
+    <namedrop name='RJ-Laptop' count='1'/>
+    <namedrop name='abc' count='9'/>
+    <namedrop name='flaneur' count='4'/>
+    <namedrop name='mustarrrrqila' count='3'/>
+    <namedrop name='Muz' count='8'/>
+    <namedrop name='felix' count='4'/>
+    <namedrop name='jonty' count='5'/>
+    <namedrop name='julian' count='7'/>
+    <namedrop name='russ' count='1'/>
+    <namedrop name='vincro' count='1'/>
+    <namedrop name='mischa' count='2'/>
+  </user>
+  <user name='abc[ritta]' messages='68' words='1115' words_per_message='16.40'>
+    <namedrop name='Russ' count='1'/>
+    <namedrop name='stefanb' count='1'/>
+    <namedrop name='flaneur' count='3'/>
+    <namedrop name='Muz' count='2'/>
+    <namedrop name='felix' count='1'/>
+    <namedrop name='jonty' count='1'/>
+    <namedrop name='julian' count='5'/>
+    <namedrop name='mischa' count='2'/>
+  </user>
+  <user name='mustaqila_' messages='10' words='104' words_per_message='10.40'>
+    <namedrop name='skr' count='1'/>
+  </user>
+  <user name='jonty|home' messages='66' words='754' words_per_message='11.42'>
+    <namedrop name='RJ' count='1'/>
+    <namedrop name='Fiona' count='4'/>
+    <namedrop name='home' count='1'/>
+    <namedrop name='invisibleA' count='2'/>
+    <namedrop name='x_nova' count='3'/>
+    <namedrop name='mustaqila' count='2'/>
+    <namedrop name='abc' count='1'/>
+    <namedrop name='Muz' count='2'/>
+    <namedrop name='julian' count='4'/>
+  </user>
+  <user name='thorsten' messages='2' words='48' words_per_message='24.00'>
+    <namedrop name='russ' count='1'/>
+  </user>
+  <user name='mustarrrrqila' messages='60' words='632' words_per_message='10.53'>
+    <namedrop name='RJ' count='3'/>
+    <namedrop name='Fiona' count='5'/>
+    <namedrop name='sharevari' count='2'/>
+    <namedrop name='skr' count='1'/>
+    <namedrop name='mueslix' count='2'/>
+    <namedrop name='x_nova' count='1'/>
+    <namedrop name='abc' count='1'/>
+    <namedrop name='jonty' count='1'/>
+    <namedrop name='julian' count='3'/>
+    <namedrop name='mischa' count='2'/>
+  </user>
+  <user name='Mactaqila' messages='9' words='94' words_per_message='10.44'>
+    <namedrop name='sharevari' count='3'/>
+    <namedrop name='flaneur' count='2'/>
+  </user>
+  <user name='mish' messages='17' words='284' words_per_message='16.71'>
+    <namedrop name='RJ' count='2'/>
+    <namedrop name='skr' count='4'/>
+    <namedrop name='mueslix' count='1'/>
+    <namedrop name='_rj' count='3'/>
+  </user>
+  <user name='mokele[office]' messages='74' words='909' words_per_message='12.28'>
+    <namedrop name='Fiona' count='4'/>
+    <namedrop name='Russ' count='1'/>
+    <namedrop name='skr' count='1'/>
+    <namedrop name='mokele' count='1'/>
+    <namedrop name='abc' count='1'/>
+    <namedrop name='irccat' count='2'/>
+    <namedrop name='jonty' count='2'/>
+    <namedrop name='julian' count='4'/>
+  </user>
+  <user name='Muz_' messages='115' words='1649' words_per_message='14.34'>
+    <namedrop name='RJ' count='3'/>
+    <namedrop name='sharevari' count='1'/>
+    <namedrop name='Russ' count='3'/>
+    <namedrop name='x_nova' count='1'/>
+    <namedrop name='stefanb' count='3'/>
+    <namedrop name='flaneur' count='2'/>
+    <namedrop name='Muz' count='1'/>
+    <namedrop name='pete_bug' count='1'/>
+    <namedrop name='jonty' count='6'/>
+    <namedrop name='julian' count='8'/>
+  </user>
+  <user name='julian' messages='1743' words='30873' words_per_message='17.71'>
+    <namedrop name='helen' count='2'/>
+    <namedrop name='RJ' count='2'/>
+    <namedrop name='home' count='8'/>
+    <namedrop name='Fiona' count='7'/>
+    <namedrop name='laura' count='5'/>
+    <namedrop name='sharevari' count='6'/>
+    <namedrop name='Russ' count='15'/>
+    <namedrop name='rh' count='1'/>
+    <namedrop name='muesli_home' count='1'/>
+    <namedrop name='skr' count='5'/>
+    <namedrop name='invisibleA' count='10'/>
+    <namedrop name='x_nova' count='1'/>
+    <namedrop name='mueslix' count='3'/>
+    <namedrop name='mokele' count='105'/>
+    <namedrop name='trainatron' count='1'/>
+    <namedrop name='flaneur' count='166'/>
+    <namedrop name='abc' count='27'/>
+    <namedrop name='Muz' count='26'/>
+    <namedrop name='irccat' count='1'/>
+    <namedrop name='martind' count='8'/>
+    <namedrop name='jonty' count='27'/>
+    <namedrop name='julian' count='6'/>
+    <namedrop name='russ' count='1'/>
+    <namedrop name='vincro' count='1'/>
+    <namedrop name='nova' count='1'/>
+  </user>
+  <user name='RJ_away' messages='18' words='180' words_per_message='10.00'>
+    <namedrop name='Russ' count='1'/>
+    <namedrop name='Muz' count='1'/>
+    <namedrop name='russ' count='1'/>
+  </user>
+  <user name='jonty_' messages='2' words='27' words_per_message='13.50'/>
+  <user name='Russ' messages='617' words='7481' words_per_message='12.12'>
+    <namedrop name='RJ' count='5'/>
+    <namedrop name='Fiona' count='5'/>
+    <namedrop name='home' count='7'/>
+    <namedrop name='train' count='1'/>
+    <namedrop name='sharevari' count='7'/>
+    <namedrop name='laura' count='1'/>
+    <namedrop name='Russ' count='5'/>
+    <namedrop name='skr' count='9'/>
+    <namedrop name='mokele' count='6'/>
+    <namedrop name='Felix_' count='7'/>
+    <namedrop name='flaneur' count='3'/>
+    <namedrop name='abc' count='10'/>
+    <namedrop name='Muz' count='5'/>
+    <namedrop name='irccat' count='2'/>
+    <namedrop name='felix' count='1'/>
+    <namedrop name='martind' count='2'/>
+    <namedrop name='jonty' count='11'/>
+    <namedrop name='felix__' count='3'/>
+    <namedrop name='julian' count='5'/>
+    <namedrop name='mischa' count='3'/>
+    <namedrop name='vincro' count='1'/>
+  </user>
+  <user name='RJ' messages='1025' words='13732' words_per_message='13.40'>
+    <namedrop name='RJ' count='1'/>
+    <namedrop name='home' count='1'/>
+    <namedrop name='helen' count='2'/>
+    <namedrop name='Fiona' count='8'/>
+    <namedrop name='laura' count='2'/>
+    <namedrop name='sharevari' count='6'/>
+    <namedrop name='Russ' count='6'/>
+    <namedrop name='bus' count='1'/>
+    <namedrop name='muesli_home' count='1'/>
+    <namedrop name='skr' count='23'/>
+    <namedrop name='mueslix' count='1'/>
+    <namedrop name='stefanb' count='1'/>
+    <namedrop name='x_nova' count='6'/>
+    <namedrop name='mokele' count='11'/>
+    <namedrop name='flaneur' count='11'/>
+    <namedrop name='abc' count='28'/>
+    <namedrop name='Felix' count='3'/>
+    <namedrop name='mischa_home' count='1'/>
+    <namedrop name='mustarrrrqila' count='1'/>
+    <namedrop name='thor' count='6'/>
+    <namedrop name='Muz' count='7'/>
+    <namedrop name='irccat' count='6'/>
+    <namedrop name='felix' count='9'/>
+    <namedrop name='pete_bug' count='2'/>
+    <namedrop name='jonty' count='9'/>
+    <namedrop name='martind' count='6'/>
+    <namedrop name='mish' count='3'/>
+    <namedrop name='julian' count='3'/>
+    <namedrop name='russ' count='2'/>
+    <namedrop name='vincro' count='3'/>
+    <namedrop name='mischa' count='9'/>
+  </user>
+  <user name='stefanb' messages='503' words='5338' words_per_message='10.61'>
+    <namedrop name='helen' count='4'/>
+    <namedrop name='home' count='1'/>
+    <namedrop name='RJ' count='4'/>
+    <namedrop name='Fiona' count='10'/>
+    <namedrop name='sharevari' count='7'/>
+    <namedrop name='laura' count='1'/>
+    <namedrop name='Russ' count='2'/>
+    <namedrop name='skr' count='10'/>
+    <namedrop name='invisibleA' count='18'/>
+    <namedrop name='x_nova' count='1'/>
+    <namedrop name='mokele' count='7'/>
+    <namedrop name='abc' count='2'/>
+    <namedrop name='pete_bug_' count='1'/>
+    <namedrop name='Felix' count='1'/>
+    <namedrop name='flaneur' count='2'/>
+    <namedrop name='thor' count='1'/>
+    <namedrop name='Muz' count='15'/>
+    <namedrop name='felix' count='1'/>
+    <namedrop name='martind' count='1'/>
+    <namedrop name='pete_bug' count='12'/>
+    <namedrop name='jonty' count='7'/>
+    <namedrop name='vincro' count='8'/>
+  </user>
+  <user name='_rj' messages='232' words='3068' words_per_message='13.22'>
+    <namedrop name='Fiona' count='2'/>
+    <namedrop name='home' count='1'/>
+    <namedrop name='sharevari' count='1'/>
+    <namedrop name='muesli_home' count='1'/>
+    <namedrop name='skr' count='5'/>
+    <namedrop name='bus' count='1'/>
+    <namedrop name='flaneur' count='1'/>
+    <namedrop name='irccat' count='1'/>
+    <namedrop name='Russss' count='1'/>
+    <namedrop name='martind' count='1'/>
+    <namedrop name='jonty' count='1'/>
+    <namedrop name='russ' count='4'/>
+  </user>
+  <user name='laura' messages='37' words='373' words_per_message='10.08'>
+    <namedrop name='helen' count='1'/>
+    <namedrop name='laura' count='1'/>
+  </user>
+  <user name='Felix' messages='2' words='9' words_per_message='4.50'>
+    <namedrop name='home' count='1'/>
+    <namedrop name='mueslix' count='1'/>
+  </user>
+  <user name='Russss' messages='29' words='366' words_per_message='12.62'>
+    <namedrop name='_rj' count='1'/>
+  </user>
+  <user name='x_nova' messages='193' words='2305' words_per_message='11.94'>
+    <namedrop name='RJ' count='2'/>
+    <namedrop name='Fiona' count='1'/>
+    <namedrop name='home' count='2'/>
+    <namedrop name='sharevari' count='1'/>
+    <namedrop name='Russ' count='2'/>
+    <namedrop name='skr' count='17'/>
+    <namedrop name='stefanb' count='1'/>
+    <namedrop name='flaneur' count='3'/>
+    <namedrop name='abc' count='4'/>
+    <namedrop name='Muz' count='14'/>
+    <namedrop name='thor' count='2'/>
+    <namedrop name='jonty' count='1'/>
+    <namedrop name='pete_bug' count='2'/>
+    <namedrop name='mischa' count='4'/>
+  </user>
+  <user name='abc[2003]' messages='150' words='2603' words_per_message='17.35'>
+    <namedrop name='home' count='1'/>
+    <namedrop name='RJ' count='8'/>
+    <namedrop name='Russ' count='6'/>
+    <namedrop name='sharevari' count='6'/>
+    <namedrop name='skr' count='1'/>
+    <namedrop name='rh' count='2'/>
+    <namedrop name='mokele' count='1'/>
+    <namedrop name='x_nova' count='1'/>
+    <namedrop name='flaneur' count='2'/>
+    <namedrop name='mischa_home' count='3'/>
+    <namedrop name='Muz' count='3'/>
+    <namedrop name='martind' count='5'/>
+    <namedrop name='jonty' count='3'/>
+    <namedrop name='mischa' count='1'/>
+  </user>
+  <user name='helen_' messages='2' words='49' words_per_message='24.50'>
+    <namedrop name='skr' count='2'/>
+  </user>
+  <user name='skr' messages='1654' words='21823' words_per_message='13.19'>
+    <namedrop name='helen' count='2'/>
+    <namedrop name='RJ' count='35'/>
+    <namedrop name='home' count='9'/>
+    <namedrop name='Fiona' count='54'/>
+    <namedrop name='laura' count='3'/>
+    <namedrop name='sharevari' count='8'/>
+    <namedrop name='Russ' count='26'/>
+    <namedrop name='skr' count='1'/>
+    <namedrop name='rh' count='2'/>
+    <namedrop name='invisibleA' count='23'/>
+    <namedrop name='Felix_' count='1'/>
+    <namedrop name='stefanb' count='3'/>
+    <namedrop name='mueslix' count='2'/>
+    <namedrop name='x_nova' count='13'/>
+    <namedrop name='_rj' count='5'/>
+    <namedrop name='mokele' count='16'/>
+    <namedrop name='flaneur' count='18'/>
+    <namedrop name='abc' count='6'/>
+    <namedrop name='mischa_home' count='2'/>
+    <namedrop name='mustarrrrqila' count='1'/>
+    <namedrop name='thor' count='4'/>
+    <namedrop name='Muz' count='26'/>
+    <namedrop name='felix' count='9'/>
+    <namedrop name='Russss' count='1'/>
+    <namedrop name='pete_bug' count='10'/>
+    <namedrop name='jonty' count='23'/>
+    <namedrop name='martind' count='24'/>
+    <namedrop name='mish' count='1'/>
+    <namedrop name='felix__' count='1'/>
+    <namedrop name='julian' count='6'/>
+    <namedrop name='vincro' count='1'/>
+    <namedrop name='russ' count='7'/>
+    <namedrop name='mischa' count='20'/>
+    <namedrop name='RJdc' count='3'/>
+    <namedrop name='nova' count='1'/>
+  </user>
+  <user name='abc' messages='1192' words='18779' words_per_message='15.75'>
+    <namedrop name='home' count='2'/>
+    <namedrop name='Fiona' count='9'/>
+    <namedrop name='RJ' count='25'/>
+    <namedrop name='laura' count='1'/>
+    <namedrop name='sharevari' count='30'/>
+    <namedrop name='Russ' count='39'/>
+    <namedrop name='skr' count='6'/>
+    <namedrop name='invisibleA' count='8'/>
+    <namedrop name='rh' count='5'/>
+    <namedrop name='Felix_' count='1'/>
+    <namedrop name='_rj' count='2'/>
+    <namedrop name='mueslix' count='3'/>
+    <namedrop name='x_nova' count='1'/>
+    <namedrop name='mokele' count='13'/>
+    <namedrop name='abc' count='2'/>
+    <namedrop name='flaneur' count='34'/>
+    <namedrop name='mischa_home' count='2'/>
+    <namedrop name='rj_' count='3'/>
+    <namedrop name='Muz' count='25'/>
+    <namedrop name='irccat' count='1'/>
+    <namedrop name='felix' count='3'/>
+    <namedrop name='martind' count='9'/>
+    <namedrop name='pete_bug' count='2'/>
+    <namedrop name='jonty' count='24'/>
+    <namedrop name='julian' count='43'/>
+    <namedrop name='vincro' count='1'/>
+    <namedrop name='russ' count='1'/>
+    <namedrop name='mischa' count='18'/>
+    <namedrop name='RJdc' count='3'/>
+  </user>
+  <user name='abc[tube]' messages='134' words='2119' words_per_message='15.81'>
+    <namedrop name='Fiona' count='1'/>
+    <namedrop name='RJ' count='3'/>
+    <namedrop name='sharevari' count='1'/>
+    <namedrop name='Russ' count='4'/>
+    <namedrop name='rh' count='1'/>
+    <namedrop name='invisibleA' count='4'/>
+    <namedrop name='mokele' count='1'/>
+    <namedrop name='flaneur' count='1'/>
+    <namedrop name='Felix' count='1'/>
+    <namedrop name='felix' count='10'/>
+    <namedrop name='jonty' count='1'/>
+    <namedrop name='julian' count='11'/>
+  </user>
+  <user name='mischa' messages='341' words='5129' words_per_message='15.04'>
+    <namedrop name='Fiona' count='2'/>
+    <namedrop name='home' count='1'/>
+    <namedrop name='RJ' count='15'/>
+    <namedrop name='sharevari' count='9'/>
+    <namedrop name='Russ' count='17'/>
+    <namedrop name='invisibleA' count='4'/>
+    <namedrop name='skr' count='20'/>
+    <namedrop name='x_nova' count='3'/>
+    <namedrop name='mokele' count='5'/>
+    <namedrop name='abc' count='28'/>
+    <namedrop name='flaneur' count='3'/>
+    <namedrop name='rj_' count='1'/>
+    <namedrop name='Muz' count='8'/>
+    <namedrop name='felix' count='7'/>
+    <namedrop name='pete_bug' count='1'/>
+    <namedrop name='martind' count='1'/>
+    <namedrop name='felix__' count='1'/>
+    <namedrop name='julian' count='2'/>
+    <namedrop name='vincro' count='2'/>
+    <namedrop name='mischa' count='1'/>
+  </user>
+  <user name='mustaqila' messages='97' words='1465' words_per_message='15.10'>
+    <namedrop name='sharevari' count='2'/>
+    <namedrop name='Russ' count='5'/>
+    <namedrop name='train' count='1'/>
+    <namedrop name='bus' count='1'/>
+    <namedrop name='_rj' count='1'/>
+    <namedrop name='abc' count='1'/>
+    <namedrop name='Fiona_' count='1'/>
+    <namedrop name='flaneur' count='3'/>
+    <namedrop name='jonty' count='4'/>
+    <namedrop name='julian' count='1'/>
+  </user>
+  <user name='mokele' messages='1163' words='15955' words_per_message='13.72'>
+    <namedrop name='helen' count='2'/>
+    <namedrop name='home' count='3'/>
+    <namedrop name='RJ' count='16'/>
+    <namedrop name='Fiona' count='5'/>
+    <namedrop name='sharevari' count='8'/>
+    <namedrop name='Russ' count='25'/>
+    <namedrop name='skr' count='11'/>
+    <namedrop name='invisibleA' count='1'/>
+    <namedrop name='x_nova' count='1'/>
+    <namedrop name='mustaqila' count='2'/>
+    <namedrop name='mueslix' count='1'/>
+    <namedrop name='stefanb' count='2'/>
+    <namedrop name='mokele' count='6'/>
+    <namedrop name='abc' count='5'/>
+    <namedrop name='Felix' count='1'/>
+    <namedrop name='flaneur' count='28'/>
+    <namedrop name='Muz' count='11'/>
+    <namedrop name='felix' count='1'/>
+    <namedrop name='irccat' count='3'/>
+    <namedrop name='martind' count='4'/>
+    <namedrop name='pete_bug' count='2'/>
+    <namedrop name='jonty' count='9'/>
+    <namedrop name='julian' count='77'/>
+    <namedrop name='mischa' count='6'/>
+    <namedrop name='russ' count='4'/>
+    <namedrop name='vincro' count='9'/>
+  </user>
+  <user name='Hannah' messages='204' words='3960' words_per_message='19.41'>
+    <namedrop name='Fiona' count='2'/>
+    <namedrop name='sharevari' count='9'/>
+    <namedrop name='rh' count='1'/>
+    <namedrop name='mueslix' count='1'/>
+    <namedrop name='x_nova' count='1'/>
+    <namedrop name='mokele' count='1'/>
+    <namedrop name='Felix_' count='1'/>
+    <namedrop name='abc' count='4'/>
+    <namedrop name='Felix' count='1'/>
+    <namedrop name='flaneur' count='8'/>
+    <namedrop name='felix' count='3'/>
+    <namedrop name='pete_bug' count='1'/>
+    <namedrop name='julian' count='12'/>
+  </user>
+</irc>
