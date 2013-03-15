@@ -2,7 +2,7 @@
 #
 # TODO: use median(wpm) instead of avg(wpm)?
 # 
-#  Created by mongo on 2006-09-29.
+#  Created by martind on 2006-09-29.
 #  Copyright (c) 2006. All rights reserved.
 
 require "rexml/document"
@@ -64,7 +64,6 @@ participants.each do |user|
 			namedrops[name] += 1
 		end
 	end
-	
 	
 	el_user.add_attribute('messages', posts.size)
 	el_user.add_attribute('words', num_words)

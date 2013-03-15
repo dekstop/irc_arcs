@@ -1,0 +1,16 @@
+ ============
+ = IRC Arcs =
+ ============
+
+A simple visualization of IRC communication behavior: Who is talking to whom? 
+Or, more appropriately: Who is namedropping whom?
+
+Created in late 2006, resurrected in 2011 for a lazy Sunday datavis session.
+Written in Java, with the Processing library as only dependency.
+
+Example output:
+http://mardoen.textdriven.com/irc_arcs/
+http://www.visualcomplexity.com/vc/project.cfm?id=403
+
+Martin Dittus
+2011-08-14 15:46:23

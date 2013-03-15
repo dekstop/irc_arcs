@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author mongo
+ * @author martind
  *
  */
 public class IrcStats {
@@ -41,8 +41,11 @@ public class IrcStats {
   
   protected void analyze() {
     for (IrcStats.User user : users) {
-      outgoing.put(user.name, 1);
-      incoming.put(user.name, 1);
+      outgoing.put(user.name, 0);
+      incoming.put(user.name, 0);
+      for (String recipient : user.namedrops.keySet()) {
+        incoming.put(recipient, 0);
+      }
     }
       
     for (IrcStats.User user : users) {

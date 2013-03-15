@@ -11,6 +11,8 @@ import processing.core.PFont;
 import processing.core.PGraphics;
 
 /**
+ * Loads summarised data from an XML file  and builds an arc graph.
+ * 
  * @author martind
  * 
  * TODO: refactor backbuffer drawing routines into a dedicated class
@@ -20,8 +22,8 @@ public class IrcArcs extends PApplet {
 
   private static final long serialVersionUID = -5504168075503747845L;
   
-  static final int WINDOW_WIDTH = 800;
-  static final int WINDOW_HEIGHT = 800;
+  static final int WINDOW_WIDTH = 4000;
+  static final int WINDOW_HEIGHT = 4000;
   
   static final float MIN_CROSSHAIR_DIAMETER = 22;
   static final float CROSSHAIR_STROKE_WEIGHT = 15;
@@ -32,12 +34,17 @@ public class IrcArcs extends PApplet {
   static final String[] sortModeNames = {
     "name", "incoming", "outgoing", "rate"
   };
+  
+  // output
+  String outputDirname = null;
 
   // irc data
   IrcStats stats = null;
   
   // drawing backbuffer
+  boolean useBackbuffer = false;
   PGraphics pg = null;
+  boolean hasInitialisedBuffer = false;
   
   // typo
   PFont headerFont = null;
@@ -81,6 +88,7 @@ public class IrcArcs extends PApplet {
     //stats = IrcStats.loadFromXMLFile("../irc3_nobot.xml");
     stats = IrcStats.loadFromXMLFile(args[0]);
     System.out.println("Number of users: " + stats.users.size());
+    outputDirname = args[1];
 
     // prepare
     pixPerMsg = (float)WINDOW_WIDTH / stats.totalMessages;
@@ -93,9 +101,6 @@ public class IrcArcs extends PApplet {
     headerFont = createFont("Monaco", 12);
     font = createFont("Monaco", 10);
     
-    pg = createGraphics(WINDOW_WIDTH, WINDOW_HEIGHT, JAVA2D);
-    pg.smooth();
-    
     noLoop();
   }
     
@@ -104,8 +109,14 @@ public class IrcArcs extends PApplet {
    */
   public void draw() {
     
-    if (pg == null) {
-      return;
+    if (!hasInitialisedBuffer) { // we need 
+      if (useBackbuffer) {
+        pg = createGraphics(WINDOW_WIDTH, WINDOW_HEIGHT, JAVA2D);
+      }
+      else {
+        pg = this.g;
+      }
+      pg.smooth();
     }
 
     if (relayoutOnNextDraw == true) {
@@ -114,7 +125,7 @@ public class IrcArcs extends PApplet {
 
       // determine user positions
       generateLayout(pg);
-
+      
       // draw to backbuffer
       pg.beginDraw();
       
@@ -128,7 +139,9 @@ public class IrcArcs extends PApplet {
       saveScreenshot(pg);
 
       // display full backbuffer
-      background(pg);
+      if (useBackbuffer) {
+        background(pg);
+      }
     }
     else {
       // restore partial backbuffer
@@ -297,6 +310,9 @@ public class IrcArcs extends PApplet {
         int namedropsPerLink = user.namedrops.get(recipient);
         float strength =  0.9f * namedropsPerLink / stats.maxNamedropsPerLink + 0.1f;
         
+        if(positions.get(recipient)==null) {
+          System.out.println(recipient);
+        }
         float fromPos = positions.get(sender);
         float toPos = positions.get(recipient);
         float center = (fromPos + toPos) / 2f;
@@ -316,7 +332,7 @@ public class IrcArcs extends PApplet {
           buf.arc(center, buf.height / 2f, diameter, diameter, 0, PI);          
         }
         else {
-          buf.arc(center, buf.height / 2f, diameter, diameter, PI, 0);
+          buf.arc(center, buf.height / 2f, diameter, diameter, PI, 2*PI);
         }
       }
     }
@@ -427,7 +443,8 @@ public class IrcArcs extends PApplet {
   void saveScreenshot(PGraphics buf) {
 
     StringBuffer filename = new StringBuffer();
-    filename.append("images/irc_arcs_");
+    filename.append(outputDirname);
+    filename.append("/irc_arcs_");
     if (0 <= sortMode && sortMode < sortModeNames.length) {
       filename.append(sortModeNames[sortMode]);
     }
@@ -443,10 +460,10 @@ public class IrcArcs extends PApplet {
   }
   
   public static void main(String[] args) {
-    if (args.length == 0) {
-      System.out.println("missing parameter: <IRC stats xml file>");
+    if (args.length != 2) {
+      System.out.println("missing parameter: <IRC stats xml file> <output directory>");
       return;
     }
-    PApplet.main(new String[] { IrcArcs.class.getCanonicalName(), args[0] });
+    PApplet.main(new String[] { IrcArcs.class.getCanonicalName(), args[0], args[1] });
   }
 }
